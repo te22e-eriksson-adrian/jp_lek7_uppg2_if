@@ -96,6 +96,29 @@ public class App {
         {
             System.out.println("Fel användarnamn och/eller lösenord, försök igen genom att starta om programmet.");
         }
+        
+        //g
+        System.out.println("   ");
+        System.out.println("Meny Väderprogram");
+        System.out.println("1. Skriv ut temperatur");
+        System.out.println("2. Skriv ut vind");
+        System.out.println("3. Skriv ut luftfuktighet");
+        System.out.print("Ange val: ");
+        int val = tangentbord.nextInt();
+        tangentbord.nextLine();
+        switch (val){
+            case 1:
+                System.out.println("Det är 18 grader.");
+                break;
+            case 2:
+                System.out.println("Vinden är 10 sekund-meter.");
+                break;
+            case 3:
+                System.out.println("Det är 100% luftfuktighet.");
+                break;
+            default:
+                System.out.println("Fel val!");
+        }
         tangentbord.close();
     }
 }
