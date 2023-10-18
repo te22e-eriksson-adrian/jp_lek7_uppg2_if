@@ -28,5 +28,12 @@ public class App {
         {
             System.out.println(litetTal+" är mindre än "+stortTal);
         }
+
+        //b
+        int tal1 = 10;
+        int tal2 = 20;
+        if (tal2>tal1){
+            System.out.println("Tal 2 är större än tal 1.");
+        }
     }
 }
