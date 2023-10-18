@@ -1,5 +1,9 @@
+import java.util.Scanner;
+
 public class App {
     public static void main(String[] args) throws Exception {
+        Scanner tangentbord = new Scanner(System.in);
+        
         //int litetTal = 10;
 
         /* if (litetTal<1000)
@@ -29,11 +33,52 @@ public class App {
             System.out.println(litetTal+" är mindre än "+stortTal);
         }
 
-        //b
+        //b, c
         int tal1 = 10;
-        int tal2 = 20;
+        /* int tal2 = 20; */
+        int tal2 = 0;
         if (tal2>tal1){
-            System.out.println("Tal 2 är större än tal 1.");
+            System.out.println(tal2+" är större än "+tal1);
         }
+        else
+        {
+            System.out.println(tal2+" är inte större än "+tal1);
+        }
+
+        //d
+        System.out.print("Hur mycket är klockan (svara i närmaste timme): ");
+        int timme = tangentbord.nextInt();
+        tangentbord.nextLine();
+        if (timme>7){
+            System.out.println("'Dags att gå upp!'");
+        }
+        if (timme==12){
+            System.out.println("'Dags att äta!'");
+        }
+        if (timme>23){
+            System.out.println("'Dags att gå och lägga sig!'");
+        }
+        
+        //e
+        System.out.print("Hur gammal är du?: ");
+        int ålder = tangentbord.nextInt();
+        tangentbord.nextLine();
+        System.out.print("Svara med siffran 1 om du är medlem, annars med siffran 2: ");
+        int medlem = tangentbord.nextInt();
+        if (ålder>=18 || medlem==1){
+            System.out.println("Välkommen in!");
+        }
+        else
+        {
+            System.out.println("Tyvärr får jag inte släppa in er, var så snälla att ge plats åt eventuella andra personer som står i kö.");
+        }
+        if (ålder>=18 || medlem==1){
+            System.out.println("Resultat: du kom in på klubben.");
+        }
+        else
+        {
+            System.out.println("Resultat: du kom inte in i klubben.");
+        }
+        tangentbord.close();
     }
 }
