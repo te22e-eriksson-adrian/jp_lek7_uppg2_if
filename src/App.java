@@ -3,10 +3,10 @@ import java.util.Scanner;
 public class App {
     public static void main(String[] args) throws Exception {
         Scanner tangentbord = new Scanner(System.in);
-        
-        //int litetTal = 10;
+        //a
+        /* int litetTal = 10;
 
-        /* if (litetTal<1000)
+        if (litetTal<1000)
         {
             int stortTal = 1000;
             System.out.println(litetTal+" är mindre än "+stortTal);
@@ -119,6 +119,8 @@ public class App {
             default:
                 System.out.println("Fel val!");
         }
+        System.out.println("    ");
+        System.out.println("Nu är uppgiften slutförd!");
         tangentbord.close();
     }
 }
