@@ -65,6 +65,7 @@ public class App {
         tangentbord.nextLine();
         System.out.print("Svara med siffran 1 om du är medlem, annars med siffran 2: ");
         int medlem = tangentbord.nextInt();
+        tangentbord.nextLine();
         if (ålder>=18 || medlem==1){
             System.out.println("Välkommen in!");
         }
@@ -78,6 +79,22 @@ public class App {
         else
         {
             System.out.println("Resultat: du kom inte in i klubben.");
+        }
+
+        //f
+        System.out.println("     ");
+        System.out.println("Inmata dina inloggningsuppgifter nedan tack!");
+        System.out.println("     ");
+        System.out.print("Användarnamn: ");
+        String användarnamn = tangentbord.nextLine();
+        System.out.print("\nLösenord: ");
+        String lösenord = tangentbord.nextLine();
+        if (användarnamn.equals("root") && lösenord.equals("passwd")){
+            System.out.println("Välkommen!");
+        }
+        else
+        {
+            System.out.println("Fel användarnamn och/eller lösenord, försök igen genom att starta om programmet.");
         }
         tangentbord.close();
     }
